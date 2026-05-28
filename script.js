@@ -6,19 +6,22 @@ let timeLimit;
 //カガチ探すボタン
 const button1 = document.getElementById("nanimonai");
   const message1 = document.getElementById("message1")
+  const message2 = document.getElementById("message2")
   button1.addEventListener("click",function(){
     const random=Math.random();
-    if(random<0.8){
-      message1.textContent="何にも起こらなかった！"
-      message1.style.fontSize="50px"
-      message1.style.color="yellow"; 
-  }
-    else{
-      message1.textContent="ヨリカガチがいた！"; 
-      message1.style.fontSize="50px"
-      const audio  = new Audio("./audio/maow.mp3");
-      alert("音が出るよ")
+    if (random < 0.8) {
+      message1.textContent = "何にも起こらなかった！";
+      message1.style.fontSize = "50px";
+      message1.style.color = "yellow";
+    } else if (random < 0.9) {
+      message1.textContent = "ヨリカガチがいた！";
+      message1.style.fontSize = "50px";
+      const audio = new Audio("./audio/maow.mp3");
+      alert("音が出るよ");
       audio.play();
+    } else {
+      message2.textContent = "トビカガチがいた！";
+      message2.style.fontSize = "50px";
     }
   });
 //音出すやつ定義
