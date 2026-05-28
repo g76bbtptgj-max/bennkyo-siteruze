@@ -13,7 +13,7 @@ const button1 = document.getElementById("nanimonai");
       message1.textContent = "何にも起こらなかった！";
       message1.style.fontSize = "50px";
       message1.style.color = "yellow";
-    } else if (random < 0.85) {
+    } else if (random < 0.9) {
       message1.textContent = "ヨリカガチがいた！";
       message1.style.fontSize = "50px";
       message1.style.color = "yellow";
