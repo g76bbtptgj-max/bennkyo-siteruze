@@ -13,15 +13,18 @@ const button1 = document.getElementById("nanimonai");
       message1.textContent = "何にも起こらなかった！";
       message1.style.fontSize = "50px";
       message1.style.color = "yellow";
-    } else if (random < 0.9) {
+    } else if (random < 0.85) {
       message1.textContent = "ヨリカガチがいた！";
       message1.style.fontSize = "50px";
+      message1.style.color = "yellow";
       const audio = new Audio("./audio/maow.mp3");
       alert("音が出るよ");
       audio.play();
     } else {
       message2.textContent = "トビカガチがいた！";
       message2.style.fontSize = "50px";
+      message2.style.color = "yellow";
+      
     }
   });
 //音出すやつ定義
