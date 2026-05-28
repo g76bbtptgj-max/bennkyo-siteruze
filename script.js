@@ -11,12 +11,10 @@ const button1 = document.getElementById("nanimonai");
     if(random<0.8){
       message1.textContent="何にも起こらなかった！"
       message1.style.fontSize="50px"
-      message1.style.color="yellow"
-      message1.style.backgroundColor="black"; 
+      message1.style.color="yellow"; 
   }
     else{
-      message1.textContent="ヨリカガチがいた！";
-      message1.style.backgroundColor="black"; 
+      message1.textContent="ヨリカガチがいた！"; 
       message1.style.fontSize="50px"
       const audio  = new Audio("./audio/maow.mp3");
       alert("音が出るよ")
