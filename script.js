@@ -13,10 +13,15 @@ const monsterData = {
 };
 
 
+
+
 //カガチ探すボタン
 const button1 = document.getElementById("button1");
   const message1 = document.getElementById("message1")
   const message2 = document.getElementById("message2")
+//モンス切り替え
+const monsterSelect = document.getElementById("monsterSelect");
+const monsterImage = document.getElementById("monsterpreview");
 
 //モンスター選択に応じてボタンのテキストを変更
 monsterSelect.addEventListener("change", function(){
@@ -60,9 +65,6 @@ const thunder = new Audio("./audio/thunder.mp3");
   const message = document.getElementById("message");
   const counter = document.getElementById("counter");
 
-//モンス切り替え
-const monsterSelect = document.getElementById("monsterSelect");
-const monsterImage = document.getElementById("monsterpreview");
 
 const monsterImages={
   tobi:"image/kagachi-normal.png",
