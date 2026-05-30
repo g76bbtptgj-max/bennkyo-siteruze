@@ -23,7 +23,8 @@ button{
     width:300px;
     position:absolute;
     transition:0.2s;
-    float:left;
+    display:flex;
+    justify-content:center;
 }
   @keyframes biribiri{
   0% { transform: translateX(0px); }
