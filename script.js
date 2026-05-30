@@ -6,10 +6,14 @@ let timeLimit;
 monsterImage.src = monsterImages[monsterSelect.value];
 
 //カガチ探すボタン
-const button1 = document.getElementById("nanimonai");
+const button1 = document.getElementById("button1");
   const message1 = document.getElementById("message1")
   const message2 = document.getElementById("message2")
+
+//モンスター選択に応じてボタンのテキストを変更
   button1.textContent = [monsterSelect.value] + "を探す";
+
+//ボタン押したときの処理
   button1.addEventListener("click",function(){
     const random=Math.random();
     if (random < 0.8) {
