@@ -23,9 +23,6 @@ document.getElementById("monsterpreview");
 const button1 = document.getElementById("button1");
   const message1 = document.getElementById("message1")
   const message2 = document.getElementById("message2")
-//モンス切り替え
-const monsterSelect = document.getElementById("monsterSelect");
-const monsterImage = document.getElementById("monsterpreview");
 
 //モンスター選択に応じてボタンのテキストを変更
 monsterSelect.addEventListener("change", function(){
