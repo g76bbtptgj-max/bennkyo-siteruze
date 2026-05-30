@@ -35,6 +35,19 @@ const thunder = new Audio("./audio/thunder.mp3");
   const message = document.getElementById("message");
   const counter = document.getElementById("counter");
 
+//モンス切り替え
+const monsterSelect = document.getElementById("monsterSelect");
+const monsterImage = document.getElementById("monsterImage");
+
+const monsterImages={
+  tobi:"image/kagachi-normal.png",
+  zino:"image/zinogre-normal.png"
+};
+
+monsterSelect.addEventListener("change",function(){
+  monsterImage.src = monsterImages[monsterSelect.value];
+});
+
  let count =0;
   button.addEventListener("click",function(){
    
@@ -80,8 +93,8 @@ return;
     message.style.color = "cyan";
   });
 
-const kagachi = document.getElementById("kagachi");
-kagachi.addEventListener("click",function(){
+const monster = document.getElementById("monsterImage");
+monster.addEventListener("click",function(){
 if(!gameStarted){
 
     gameStarted = true;
