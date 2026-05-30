@@ -19,7 +19,7 @@ button{
       purple
     );
   }
-#kagachi{
+#monsterImage, #monsterImage2{
     width:300px;
     position:absolute;
     transition:0.2s;

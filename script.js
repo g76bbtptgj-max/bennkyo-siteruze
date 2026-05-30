@@ -7,6 +7,7 @@ let timeLimit;
 const button1 = document.getElementById("nanimonai");
   const message1 = document.getElementById("message1")
   const message2 = document.getElementById("message2")
+  button1.textContent = monsterNames[currentMonster] + "を探す";
   button1.addEventListener("click",function(){
     const random=Math.random();
     if (random < 0.8) {
@@ -14,14 +15,18 @@ const button1 = document.getElementById("nanimonai");
       message1.style.fontSize = "50px";
       message1.style.color = "yellow";
     } else if (random < 0.9) {
-      message1.textContent = "ヨリカガチがいた！";
+      const monsterTexts = {
+  tobi: "トビカガチがいた！",
+  zino: "ジンオウガがいた！"
+};
+      message1.textContent = monsterTexts[monsterSelect.value]+"がいた！";
       message1.style.fontSize = "50px";
       message1.style.color = "yellow";
       const audio = new Audio("./audio/maow.mp3");
       alert("音が出るよ");
       audio.play();
     } else {
-      message2.textContent = "トビカガチがいた！";
+      message2.textContent = monsterTexts[monsterSelect.value]+"がごろごろした！";
       message2.style.fontSize = "50px";
       message2.style.color = "yellow";
       
