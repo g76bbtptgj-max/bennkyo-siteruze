@@ -3,6 +3,15 @@ let tapCount = 0;
 let gameStarted = false;
 let timeLimit;
 
+const monsterData = {
+  tobi: {
+    name: "トビカガチ"
+  },
+  zino: {
+    name: "ジンオウガ"
+  }
+};
+
 monsterImage.src = monsterImages[monsterSelect.value];
 
 //カガチ探すボタン
