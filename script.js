@@ -11,7 +11,13 @@ const button1 = document.getElementById("button1");
   const message2 = document.getElementById("message2")
 
 //モンスター選択に応じてボタンのテキストを変更
-  button1.textContent = [monsterSelect.value] + "を探す";
+monsterSelect.addEventListener("change", function(){
+  const selectedMonster =
+    monsterData[monsterSelect.value];
+
+  button1.textContent =
+    selectedMonster.name + "を探す";
+});  
 
 //ボタン押したときの処理
   button1.addEventListener("click",function(){
