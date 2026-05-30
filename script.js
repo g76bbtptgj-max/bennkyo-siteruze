@@ -12,7 +12,6 @@ const monsterData = {
   }
 };
 
-monsterImage.src = monsterImages[monsterSelect.value];
 
 //カガチ探すボタン
 const button1 = document.getElementById("button1");
@@ -27,6 +26,7 @@ monsterSelect.addEventListener("change", function(){
   button1.textContent =
     selectedMonster.name + "を探す";
 });  
+monsterImage.src = monsterImages[monsterSelect.value];
 
 //ボタン押したときの処理
   button1.addEventListener("click",function(){
@@ -40,7 +40,6 @@ monsterSelect.addEventListener("change", function(){
   tobi: "トビカガチがいた！",
   zino: "ジンオウガがいた！"
 };
-      message1.textContent = monsterTexts[monsterSelect.value]+"がいた！";
       message1.style.fontSize = "50px";
       message1.style.color = "yellow";
       const audio = new Audio("./audio/maow.mp3");
@@ -144,7 +143,7 @@ if(!gameStarted){
     const randomX = Math.random() * (window.innerWidth - 300);
     const randomY = Math.random() * (window.innerHeight -300);
     
-    kagachi.style.left = randomX + "px";
-    kagachi.style.top = randomY + "px";
+    monsterImage.style.left = randomX + "px";
+    monsterImage.style.top = randomY + "px";
 return;
   });
