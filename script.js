@@ -40,17 +40,17 @@ monsterImage.src = monsterImages[monsterSelect.value];
       message1.textContent = "何にも起こらなかった！";
       message1.style.fontSize = "50px";
       message1.style.color = "yellow";
+    //あらわれた
     } else if (random < 0.9) {
-      const monsterTexts = {
-  tobi: "トビカガチがいた！",
-  zino: "ジンオウガがいた！"
-};
+      message1.textContent = monsterTexts[monsterSelect.value]+"があらわれた！";
       message1.style.fontSize = "50px";
       message1.style.color = "yellow";
       const audio = new Audio("./audio/maow.mp3");
       alert("音が出るよ");
       audio.play();
-    } else {
+    } 
+    //ごろごろした
+    else {
       message2.textContent = monsterTexts[monsterSelect.value]+"がごろごろした！";
       message2.style.fontSize = "50px";
       message2.style.color = "yellow";
