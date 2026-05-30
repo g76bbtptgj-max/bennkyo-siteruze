@@ -9,7 +9,7 @@ monsterImage.src = monsterImages[monsterSelect.value];
 const button1 = document.getElementById("nanimonai");
   const message1 = document.getElementById("message1")
   const message2 = document.getElementById("message2")
-  button1.textContent = monsterNames[monsterSelect.value] + "を探す";
+  button1.textContent = [monsterSelect.value] + "を探す";
   button1.addEventListener("click",function(){
     const random=Math.random();
     if (random < 0.8) {

@@ -19,7 +19,7 @@ button{
       purple
     );
   }
-#monsterpreview, #monsterpreview2{
+#monsterpreview{
     width:300px;
     display:flex;
     justify-content:center;
