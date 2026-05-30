@@ -12,7 +12,11 @@ const monsterData = {
   }
 };
 
+const monsterSelect =
+document.getElementById("monsterSelect");
 
+const monsterImage =
+document.getElementById("monsterpreview");
 
 
 //カガチ探すボタン
