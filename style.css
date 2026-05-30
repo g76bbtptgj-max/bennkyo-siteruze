@@ -21,11 +21,20 @@ button{
   }
 #monsterpreview, #monsterpreview2{
     width:300px;
-    position:absolute;
-    transition:0.2s;
     display:flex;
     justify-content:center;
+    gap:20px;
 }
+
+#kagachi, #zinogre{
+    width:300px;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    cursor:pointer;
+}
+
   @keyframes biribiri{
   0% { transform: translateX(0px); }
   25% { transform: translateX(-5px); }

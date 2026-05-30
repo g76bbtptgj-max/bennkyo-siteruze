@@ -3,6 +3,8 @@ let tapCount = 0;
 let gameStarted = false;
 let timeLimit;
 
+monsterImage.src = monsterImages[monsterSelect.value];
+
 //カガチ探すボタン
 const button1 = document.getElementById("nanimonai");
   const message1 = document.getElementById("message1")
@@ -42,7 +44,7 @@ const thunder = new Audio("./audio/thunder.mp3");
 
 //モンス切り替え
 const monsterSelect = document.getElementById("monsterSelect");
-const monsterImage = document.getElementById("monsterImage");
+const monsterImage = document.getElementById("monsterpreview");
 
 const monsterImages={
   tobi:"image/kagachi-normal.png",
@@ -98,7 +100,7 @@ return;
     message.style.color = "cyan";
   });
 
-const monster = document.getElementById("monsterImage");
+const monster = document.getElementById("monsterpreview");
 monster.addEventListener("click",function(){
 if(!gameStarted){
 
