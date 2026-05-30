@@ -19,7 +19,7 @@ button{
       purple
     );
   }
-#monsterImage, #monsterImage2{
+#monsterpreview, #monsterpreview2{
     width:300px;
     position:absolute;
     transition:0.2s;
